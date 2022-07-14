@@ -15,8 +15,8 @@ class TestPastebin(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        path = 'C:\chromedriver\chromedriver.exe'
-        cls.driver = webdriver.Chrome(path)
+
+        cls.driver = webdriver.Chrome(cls.path)
         cls.yandex_head_page = YandexHeadPage(cls.driver)
         cls.yandex_result_page = YandexResultPage(cls.driver)
         cls.pastebin_head_page = PastebinHeadPage(cls.driver)
